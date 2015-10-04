@@ -31,7 +31,7 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> While I have used nano in the past I am now trying to switch to Vim due to its potential. Previously I had only every used nano for basic editing but the it is possible to make extremely quick changes in Vim (that I am not sure is possible in nano) such as deleting an entire line with 'dd'. The editor can be customized by editing the vimrc file.
 
 ---
 
@@ -61,6 +61,6 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> While I have used nano in the past I am now trying to switch to Vim due to its potential. Previously I had only every used nano for basic editing but the it is possible to make extremely quick changes in Vim (that I am not sure is possible in nano) such as deleting an entire line with 'dd'. The editor can be customized by editing the vimrc file.
+>> 
 
 ---
