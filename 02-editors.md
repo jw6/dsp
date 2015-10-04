@@ -62,7 +62,6 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
 >> I've used Atom in the past so I will probably stick with that. I will likely be using Spyder since it was included in the Anaconda Launcher though may switch to Pycharm due to its popularity.
-
 A list of Atom keyboard shortcuts can be found [here](https://bugsnag.com/blog/atom-editor-cheat-sheet). The editor can be customized through the preferences which will open options like installed packages and themes.
 
 ---
