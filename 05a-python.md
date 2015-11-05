@@ -12,7 +12,15 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lists do exactly what they sound like, they are used to store a list of values. An example would be:
+
+>> x = ["Ken", "Myers", 1992]
+  
+>> Tuples are similar to lists in that they can also be used to store values, however they are immutable. An example of a tuple is:
+  
+>> y = ("Ken", "Myers", 1992)
+  
+>> Tuples can not be changed once they are created, unlike strings. Due to their immutability, tuples are assigned hash values which allow them to be used as keys in dictionaries. Dictionaries are a list of key-value pairs, the key can be searched in the dictionary to get its corresponding value. The dictionary keys must be immutable because if they were changed, the hash would also change and so the previously associated hash will no longer be able to find the value that the key originally pointed to. This is why tuples can be used as keys but lists can not.
 
 ---
 
