@@ -33,6 +33,7 @@ How are Python lists and sets similar and different? Give examples of using both
 >> Example of a list: kenncann = ["kenn", "cann"]
 
 >> Example of a set: set(kenncann)
+
 >> Another set example: kenncann = {"kenn", "cann"}
 
 
