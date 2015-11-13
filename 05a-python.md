@@ -65,7 +65,23 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehension is a way of constructing lists from something else and, in many cases, can be easier to write and read than using a function. For example, the map and filter functions might be used like this:
+
+>>> list1 = "Hello, my name is Kenneth".split()
+
+>>> list2 = map(lambda x: [x.upper(), len(x)], list1)
+
+>>> list3 = filter(lambda x: len(x)>4, list1)
+
+>> Or the same outcome can be achieved with list comprehension:
+
+>>> list4 = [[x.upper(), len(x)] for x in list1]
+
+>>> list5 = [x for x in list1 if len(x)>4]
+
+>> Similarly this can be done with sets or dictionaries:
+
+
 
 ---
 
