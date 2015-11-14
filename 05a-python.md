@@ -81,6 +81,12 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 
 >> Similarly this can be done with sets or dictionaries:
 
+>>> set1 = set("Hello. my name is Kenneth. Hello. Hello.".split())
+
+>>> set2 = {x.upper() for x in set1}
+
+>>> squareDict = { x: x**2 for x in range(1,11) }
+
 
 
 ---
