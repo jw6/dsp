@@ -14,12 +14,16 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 >> Lists do exactly what they sound like, they are used to store a list of values. An example would be:
 
->> x = ["Ken", "Myers", 1992]
-  
+```
+x = ["Ken", "Myers", 1992]
+```  
+
 >> Tuples are similar to lists in that they can also be used to store values, however they are immutable. An example of a tuple is:
-  
->> y = ("Ken", "Myers", 1992)
-  
+
+```  
+y = ("Ken", "Myers", 1992)
+```  
+
 >> Tuples can not be changed once they are created, unlike strings. Due to their immutability, tuples are assigned hash values which allow them to be used as keys in dictionaries. Dictionaries are a list of key-value pairs, the key can be searched in the dictionary to get its corresponding value. The dictionary keys must be immutable because if they were changed, the hash would also change and so the previously associated hash will no longer be able to find the value that the key originally pointed to. This is why tuples can be used as keys but lists can not.
 
 ---
@@ -32,10 +36,17 @@ How are Python lists and sets similar and different? Give examples of using both
 
 >> Example of a list: kenncann = ["kenn", "cann"]
 
->> Example of a set: set(kenncann)
+>> Example of a set: 
 
->> Another set example: kenncann = {"kenn", "cann"}
+```
+name = set(kenncann)
+```
 
+>> Another set example: 
+
+```
+kenncann = {"kenn", "cann"}
+```
 
 ---
 
@@ -45,17 +56,22 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 >> Python's 'lambda' allows you to write anonymous functions. That is, it allows you to evaluate something without having to define the function. For example, a function might be defined as follows:
 
->>> def squareIt (x): return x**2
+```
+def squareIt (x): return x**2
+```
 
 >> Or that function can be defined anonymously with 'lambda':
 
->>> f = lambda x: x**2
+```
+f = lambda x: x**2
+```
 
 >> The function does not need to be named, nor does it return something. It just evaluates an expression. An exampble of lambda being used in the key argument of 'sorted' is the following:
 
->>> \>>> sorted([5, -2, 10, -6, 8], key=lambda x: x**2)
-
->>> [-2, 5, -6, 8, 10]
+```
+>>>sorted([5, -2, 10, -6, 8], key=lambda x: x**2)
+[-2, 5, -6, 8, 10]
+```
 
 >> Adding the key function sorted the list by the values' square value (this might also be viewed as the least to greatest absolute value of the values in the list).
 
@@ -67,27 +83,31 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 
 >> List comprehension is a way of constructing lists from something else and, in many cases, can be easier to write and read than using a function. For example, the map and filter functions might be used like this:
 
->>> list1 = "Hello, my name is Kenneth".split()
+```
+list1 = "Hello, my name is Kenneth".split()
 
->>> list2 = map(lambda x: [x.upper(), len(x)], list1)
+list2 = map(lambda x: [x.upper(), len(x)], list1)
 
->>> list3 = filter(lambda x: len(x)>4, list1)
+list3 = filter(lambda x: len(x)>4, list1)
+```
 
 >> Or the same outcome can be achieved with list comprehension:
 
->>> list4 = [[x.upper(), len(x)] for x in list1]
+```
+list4 = [[x.upper(), len(x)] for x in list1]
 
->>> list5 = [x for x in list1 if len(x)>4]
+list5 = [x for x in list1 if len(x)>4]
+```
 
 >> Similarly this can be done with sets or dictionaries:
 
->>> set1 = set("Hello. my name is Kenneth. Hello. Hello.".split())
+```
+set1 = set("Hello. my name is Kenneth. Hello. Hello.".split())
 
->>> set2 = {x.upper() for x in set1}
+set2 = {x.upper() for x in set1}
 
->>> squareDict = { x: x**2 for x in range(1,11) }
-
-
+squareDict = { x: x**2 for x in range(1,11) }
+```
 
 ---
 
@@ -102,7 +122,34 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> This is the script I wrote for this program:
+
+```
+from datetime import datetime
+
+formatsList = ["%m-%d-%Y",
+"%m%d%Y",
+"%d-%b-%Y"]
+
+datesList = [
+['01-02-2013', '07-28-2015'],
+['12312013', '05282015'],
+['15-Jan-1994', '14-Jul-2015']
+]
+
+def dayCount (firstDay, lastDay, i):
+    a = datetime.strptime(firstDay, formatsList[i])
+    b = datetime.strptime(lastDay, formatsList[i])
+    delta = b-a
+    print(delta.days)
+
+i=0
+for x,y in datesList:
+    dayCount(x,y,i)
+    i+=1
+```
+
+>> 937 Days
 
 b.  
 ```
@@ -110,7 +157,7 @@ date_start = '12312013'
 date_stop = '05282015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> 513 days
 
 c.  
 ```
@@ -118,7 +165,7 @@ date_start = '15-Jan-1994'
 date_stop = '14-Jul-2015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE  
+>> 7850 days 
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
