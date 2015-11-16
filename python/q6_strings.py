@@ -78,6 +78,8 @@ def fix_start(s):
 
 
 def mix_up(a, b):
+    return "{} {}".format(b[0:2] + a[2:], a[0:2] + b[2:])
+    
     """
     Given strings a and b, return a single string with a and b
     separated by a space '<a> <b>', except swap the first 2 chars of
@@ -96,6 +98,13 @@ def mix_up(a, b):
 
 
 def verbing(s):
+    if s[-3:].lower() == 'ing':
+        return "{}".format(s[0:] + 'ly')
+    elif len(s) < 3:
+        return s
+    else:
+        return "{}".format(s[0:] + 'ing')
+   
     """
     Given a string, if its length is at least 3, add 'ing' to its end.
     Unless it already ends in 'ing', in which case add 'ly' instead.
