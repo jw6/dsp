@@ -122,6 +122,13 @@ def verbing(s):
 
 
 def not_bad(s):
+    checkBad = s.find("bad")
+    checkNot = s.find("not")
+    if checkBad != -1 and checkNot != -1 and checkBad > checkNot:
+        return "{}good".format(s[:checkNot])
+    else:
+        return s
+    
     """
     Given a string, find the first appearance of the substring 'not'
     and 'bad'. If the 'bad' follows the 'not', replace the whole
@@ -141,7 +148,14 @@ def not_bad(s):
     raise NotImplementedError
 
 
+import math
 def front_back(a, b):
+    aHalfLength = math.ceil(len(a)/2)
+    bHalfLength = math.ceil(len(b)/2)
+    #print("{},{}".format(aHalfLength, bHalfLength))
+    return "{}{}{}{}".format(a[:aHalfLength],b[:bHalfLength],a[aHalfLength:],b[bHalfLength:])
+    
+    
     """
     Consider dividing a string into two halves. If the length is even,
     the front and back halves are the same length. If the length is
