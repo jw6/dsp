@@ -3,6 +3,13 @@
 
 
 def match_ends(words):
+    count = 0
+    for x in words:
+        if len(x)>=2 and x[0] == x[-1]:
+            count +=1
+            
+    return count
+    
     """
     Given a list of strings, return the count of the number of strings
     where the string length is 2 or more and the first and last chars
@@ -19,6 +26,18 @@ def match_ends(words):
 
 
 def front_x(words):
+    firstList = []
+    secondList = []
+    for x in words:
+        if x[0].lower() == 'x':
+            firstList.append(x)
+        else:
+            secondList.append(x)
+    firstList = sorted(firstList)
+    secondList = sorted(secondList)
+    return firstList + secondList
+    
+    
     """
     Given a list of strings, return a list with the strings in sorted
     order, except group all the strings that begin with 'x' first.
