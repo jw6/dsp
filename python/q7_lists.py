@@ -55,6 +55,8 @@ def front_x(words):
 
 
 def sort_last(tuples):
+    return sorted(tuples, key=lambda x: x[1])
+    
     """
     Given a list of non-empty tuples, return a list sorted in
     increasing order by the last element in each tuple.
@@ -72,6 +74,15 @@ def sort_last(tuples):
 
 
 def remove_adjacent(nums):
+    newList = []
+    last = None
+    for i in nums:
+        if i != last:
+            newList.append(i)
+            last = i
+            
+    return newList
+    
     """
     Given a list of numbers, return a list where all adjacent equal
     elements have been reduced to a single element, so [1, 2, 2, 3]
@@ -91,6 +102,8 @@ def remove_adjacent(nums):
 
 
 def linear_merge(list1, list2):
+    return sorted(list1+list2)
+    
     """
     Given two lists sorted in increasing order, create and return a
     merged list of all the elements in sorted order. You may modify
