@@ -16,7 +16,25 @@ Use regular expressions to:
 
 ####Q1. Find how many different degrees there are, and their frequencies: Ex:  PhD, ScD, MD, MPH, BSEd, MS, JD, etc.
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> \# of different degrees: 8
+
+>> phd: 31
+
+>> scd: 6
+
+>> ms: 2
+
+>> mph: 2
+
+>> md: 1
+
+>> bsed: 1
+
+>> ma: 1
+
+>> jd: 1
+
+>> Also, there is one person in the file without any degrees listed (the zero) but this was ignored with the regular expressions and not inlcuded as a degree.
 
 
 ####Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
