@@ -39,7 +39,7 @@ Use regular expressions to:
 
 ####Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
 
->> # of different titles: 3
+>> \# of different titles: 3
 
 >>professor: 13
 
