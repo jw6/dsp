@@ -130,12 +130,30 @@ professor_dict1 = {('Scarlett', 'Bellamy'): ['Sc.D.', 'Associate Professor of Bi
 
 ####Q8.  It looks like the current dictionary is printing by first name.  Sort by last name and print the first 3 key and value pairs.  
 
->> 
+>> To be honest, I thought the wording on these questions was very confusing. Since dictionaries are inherently unsorted, I was unsure if I was supposed to just redo the above dictionary in a format of "(Lastname, Firstname): [...]" or actually print the dictionary sorted and even then whether the format was (Firstname, Lastname) or (Lastname, Firstname). So I am supplying all of the ways I interpretted this question.
+
+>> Not printed alphabetically but a dictionary stored "(Lastname, Firstname)":
 ```
-professor_dict = {('Localio', 'A.'): ['JD MA MPH MS PhD', 'Associate Professor of Biostatistics', 'rlocalio@upenn.edu'], 
+professor_dict2 = {('Localio', 'A.'): ['JD MA MPH MS PhD', 'Associate Professor of Biostatistics', 'rlocalio@upenn.edu'], 
 ('Hsu', 'Yenchih'): ['Ph.D.', 'Assistant Professor of Biostatistics', 'hsu9@mail.med.upenn.edu'], 
 ('French', 'Benjamin'): ['PhD', 'Associate Professor of Biostatistics', 'bcfrench@mail.med.upenn.edu'], ...}
 ```
+
+>> professor_dict1 print of last name alphabetical sort:
+```
+('Scarlett', 'Bellamy') : ['Sc.D.', 'Associate Professor of Biostatistics', 'bellamys@mail.med.upenn.edu']
+('Warren', 'Bilker') : ['Ph.D.', 'Professor of Biostatistics', 'warren@upenn.edu']
+('Matthew', 'Bryan') : ['PhD', 'Assistant Professor of Biostatistics', 'bryanma@upenn.edu']
+```
+
+>> professor_dict2 print of last name alphabetical sort:
+```
+('Bellamy', 'Scarlett') : ['Sc.D.', 'Associate Professor of Biostatistics', 'bellamys@mail.med.upenn.edu']
+('Bilker', 'Warren') : ['Ph.D.', 'Professor of Biostatistics', 'warren@upenn.edu']
+('Bryan', 'Matthew') : ['PhD', 'Assistant Professor of Biostatistics', 'bryanma@upenn.edu']
+```
+
+>> I am unsure if Q6 and Q7 were also supposed to have been submitted alphabetically but they did not say anything about sorting them. I hope this will be sufficient for my submission.
 
 Place your code in this file: [advanced_python_dict.py](python/advanced_python_dict.py)
 
