@@ -103,7 +103,7 @@ Print the first 3 key and value pairs of the dictionary:
 
 >> 
 ```
-{'Bryan': [['PhD', 'Assistant Professor of Biostatistics', 'bryanma@upenn.edu']], 
+faculty_dict = {'Bryan': [['PhD', 'Assistant Professor of Biostatistics', 'bryanma@upenn.edu']], 
 'Morales': [['Sc.D.', 'Associate Professor of Biostatistics', 'knashawn@mail.med.upenn.edu']], 
 'Bilker': [['Ph.D.', 'Professor of Biostatistics', 'warren@upenn.edu']], ...}
 ```
@@ -121,7 +121,12 @@ professor_dict = {('Susan', 'Ellenberg'): ['Ph.D.', 'Professor', 'sellenbe@upenn
 
 Print the first 3 key and value pairs of the dictionary:
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> 
+```
+professor_dict = {('Localio', 'A.'): ['JD MA MPH MS PhD', 'Associate Professor of Biostatistics', 'rlocalio@upenn.edu'], 
+('Hsu', 'Yenchih'): ['Ph.D.', 'Assistant Professor of Biostatistics', 'hsu9@mail.med.upenn.edu'], 
+('French', 'Benjamin'): ['PhD', 'Associate Professor of Biostatistics', 'bcfrench@mail.med.upenn.edu'], ...}
+```
 
 ####Q8.  It looks like the current dictionary is printing by first name.  Sort by last name and print the first 3 key and value pairs.  
 
