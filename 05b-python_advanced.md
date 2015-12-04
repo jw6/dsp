@@ -123,14 +123,19 @@ Print the first 3 key and value pairs of the dictionary:
 
 >> 
 ```
-professor_dict = {('Localio', 'A.'): ['JD MA MPH MS PhD', 'Associate Professor of Biostatistics', 'rlocalio@upenn.edu'], 
-('Hsu', 'Yenchih'): ['Ph.D.', 'Assistant Professor of Biostatistics', 'hsu9@mail.med.upenn.edu'], 
-('French', 'Benjamin'): ['PhD', 'Associate Professor of Biostatistics', 'bcfrench@mail.med.upenn.edu'], ...}
+professor_dict1 = {('Scarlett', 'Bellamy'): ['Sc.D.', 'Associate Professor of Biostatistics',
+'bellamys@mail.med.upenn.edu'], ('Alisa', 'Stephens'): ['Ph.D.', 'Assistant Professor of Biostatistics',
+'alisaste@mail.med.upenn.edu'], ('Warren', 'Bilker'): ['Ph.D.', 'Professor of Biostatistics', 'warren@upenn.edu'],  ...}
 ```
 
 ####Q8.  It looks like the current dictionary is printing by first name.  Sort by last name and print the first 3 key and value pairs.  
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> 
+```
+professor_dict = {('Localio', 'A.'): ['JD MA MPH MS PhD', 'Associate Professor of Biostatistics', 'rlocalio@upenn.edu'], 
+('Hsu', 'Yenchih'): ['Ph.D.', 'Assistant Professor of Biostatistics', 'hsu9@mail.med.upenn.edu'], 
+('French', 'Benjamin'): ['PhD', 'Associate Professor of Biostatistics', 'bcfrench@mail.med.upenn.edu'], ...}
+```
 
 Place your code in this file: [advanced_python_dict.py](python/advanced_python_dict.py)
 
