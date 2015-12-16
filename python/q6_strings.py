@@ -3,6 +3,12 @@
 
 
 def donuts(count):
+    if count >= 10:
+        return "Number of donuts: many"
+    else:
+        return "Number of donuts: {}".format(count)
+    raise NotImplementedError
+    
     """
     Given an int count of a number of donuts, return a string of the
     form 'Number of donuts: <count>', where <count> is the number
@@ -18,10 +24,19 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
 
 
 def both_ends(s):
+    if len(s) < 2:
+        return ""
+    else:
+        one = s[0]
+        two = s[1]
+        three = s[-2]
+        four = s[-1]
+        return "{}{}{}{}".format(one,two,three,four)
+    raise NotImplementedError
+    
     """
     Given a string s, return a string made of the first 2 and the last
     2 chars of the original string, so 'spring' yields 'spng'.
@@ -37,10 +52,13 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
 
 
 def fix_start(s):
+    newString = s[1:]
+    newString = s[0] + newString.replace(s[0].lower(), '*')
+    return newString
+    
     """
     Given a string s, return a string where all occurences of its
     first char have been changed to '*', except do not change the
@@ -60,6 +78,8 @@ def fix_start(s):
 
 
 def mix_up(a, b):
+    return "{} {}".format(b[0:2] + a[2:], a[0:2] + b[2:])
+    
     """
     Given strings a and b, return a single string with a and b
     separated by a space '<a> <b>', except swap the first 2 chars of
@@ -78,6 +98,13 @@ def mix_up(a, b):
 
 
 def verbing(s):
+    if s[-3:].lower() == 'ing':
+        return "{}".format(s[0:] + 'ly')
+    elif len(s) < 3:
+        return s
+    else:
+        return "{}".format(s[0:] + 'ing')
+   
     """
     Given a string, if its length is at least 3, add 'ing' to its end.
     Unless it already ends in 'ing', in which case add 'ly' instead.
@@ -95,6 +122,13 @@ def verbing(s):
 
 
 def not_bad(s):
+    checkBad = s.find("bad")
+    checkNot = s.find("not")
+    if checkBad != -1 and checkNot != -1 and checkBad > checkNot:
+        return "{}good".format(s[:checkNot])
+    else:
+        return s
+    
     """
     Given a string, find the first appearance of the substring 'not'
     and 'bad'. If the 'bad' follows the 'not', replace the whole
@@ -114,7 +148,14 @@ def not_bad(s):
     raise NotImplementedError
 
 
+import math
 def front_back(a, b):
+    aHalfLength = math.ceil(len(a)/2)
+    bHalfLength = math.ceil(len(b)/2)
+    #print("{},{}".format(aHalfLength, bHalfLength))
+    return "{}{}{}{}".format(a[:aHalfLength],b[:bHalfLength],a[aHalfLength:],b[bHalfLength:])
+    
+    
     """
     Consider dividing a string into two halves. If the length is even,
     the front and back halves are the same length. If the length is

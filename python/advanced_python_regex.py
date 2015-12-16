@@ -81,9 +81,9 @@ class Faculty(object):
             print(k+': '+str(v))
 
 
-#testFaculty = Faculty("faculty.csv")
-#data = testFaculty.read_data()
-#testFaculty.count_degrees()
-#testFaculty.count_titles()
-#print(testFaculty.get_emails())
-#testFaculty.email_domains()
+testFaculty = Faculty("faculty.csv")
+data = testFaculty.read_data()
+testFaculty.count_degrees()
+testFaculty.count_titles()
+print(testFaculty.get_emails())
+testFaculty.email_domains()
