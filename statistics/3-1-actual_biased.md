@@ -30,3 +30,5 @@ thinkplot.PrePlot(2)
 thinkplot.Pmfs([unbiasednumkids, biasednumkids])
 thinkplot.Show(xlabel='Num Kids', ylabel='PMF')
 ```
+
+![Fig 3.1](fig3.1.png)
