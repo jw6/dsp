@@ -93,7 +93,11 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 ###Q8. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> In its simplest terms, the difference between Bayesian and Frequentist statistics is that Bayesian examines the probability of a hypothesis given the data, written as P(H|D), while Frequentist statistics examine the probability of the data given a hypothesis, or P(D|H). 
+
+>> For Bayesian statistics, a suite of hypotheses are examined and the probability of each individual hypothesis is determined from a set of data in order to find out which hypothesis is the most likely explanation for the data. One such example is the M&M problem in the *Think Bayes* book. Two bags of M&Ms from two different years with known color probabilities are used to compare the likelihood of which bag a yellow and green M&M came from. The Yellow M&M either came from the older or younger bag and it can be determined which hypothesis is more likely using the known data about the color probabilities in each bag. 
+
+>> In Frequentist statistics, a hypothesis is made prior to data collection and then it is either proved or disproved by the data. For example, in the *Think Statistics* book the following question was asked: "Are first born babies born lighter than later-born babies?" A hypothesis is proposed that they do weigh lighter, data is collected and the data either supports the claim that they weigh lighter, or it is rejected.
 
 ---
 
